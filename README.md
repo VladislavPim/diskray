@@ -24,11 +24,8 @@ DiskRay is a powerful, user-friendly disk space analyzer built with Rust and egu
 
 *Main interface with tree view and extension analysis panel*
 
-![Main Window](screenshot-main.png)
+![Main Window](screenshot.png)
 
-*Disk information panel showing all mounted drives*
-
-![Disks Panel](screenshot-disks.png)
 
 ## 📦 Installation
 
