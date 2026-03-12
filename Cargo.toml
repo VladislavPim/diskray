@@ -1,0 +1,44 @@
+[package]
+name = "diskray"
+version = "0.3.0"
+edition = "2021"
+build = "build.rs"
+description = "Advanced disk space analyzer with visualizations"
+authors = ["VladislavPimenov"]
+license = "MIT"
+readme = "README.md"
+keywords = ["disk", "analyzer", "gui", "storage", "visualization"]
+categories = ["filesystem", "gui"]
+
+[dependencies]
+eframe = "0.33.3"
+egui = "0.33.3"
+egui_extras = "0.33.3"
+serde = { version = "1.0", features = ["derive"] }
+jwalk = "0.8.1"        
+rayon = "1.8"          
+anyhow = "1.0"
+thiserror = "2.0"
+chrono = { version = "0.4", features = ["serde"] }
+humansize = "2.1"
+parking_lot = "0.12"
+percent-encoding = "2.3"
+lazy_static = "1.4"
+regex = "1.10"
+rfd = "0.12"
+sysinfo = "0.30"
+dirs = "5.0"
+image = { version = "0.24", default-features = false, features = ["ico", "png"] }
+
+[dev-dependencies]
+tempfile = "3.10"
+
+[build-dependencies]
+winresource = "0.1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "z"
+strip = true
+panic = "abort"
