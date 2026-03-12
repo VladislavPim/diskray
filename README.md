@@ -6,7 +6,7 @@
 
 DiskRay is a powerful, user-friendly disk space analyzer built with Rust and egui. It helps you visualize disk usage, identify large files and folders, and clean up unnecessary data with ease.
 
-![DiskRay Screenshot](screenshot.png)
+![DiskRay Screenshot](assets/screenshot.png)
 
 ## ✨ Features
 
@@ -20,18 +20,11 @@ DiskRay is a powerful, user-friendly disk space analyzer built with Rust and egu
 - **⚡ Optimized for HDD/SSD** - Configurable parallelism to match your hardware
 - **🪟 Windows Integration** - Custom icon, no console window, proper DPI scaling
 
-## 🖥️ Screenshots
-
-*Main interface with tree view and extension analysis panel*
-
-![Main Window](screenshot.png)
-
-
 ## 📦 Installation
 
 ### From Source
 ```bash
-git clone https://github.com/yourusername/diskray.git
+git clone https://github.com/VladislavPim/diskray.git
 cd diskray
 cargo build --release
 ./target/release/diskray.exe  # Windows
@@ -40,7 +33,7 @@ cargo build --release
 ```
 
 ### Pre-built Binaries
-Download the latest release from the [Releases page](https://github.com/yourusername/diskray/releases).
+Download the latest release from the [Releases page](https://github.com/VladislavPim/diskray/releases).
 
 ## 🚀 Usage
 
