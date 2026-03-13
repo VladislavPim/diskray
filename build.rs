@@ -3,6 +3,14 @@ fn main() {
     {
         let mut res = winresource::WindowsResource::new();
         res.set_icon("assets/diskray.ico");
+        // Добавляем информацию о версии
+        res.set("FileDescription", "DiskRay Disk Space Analyzer");
+        res.set("ProductName", "DiskRay");
+        res.set("CompanyName", "Vladislav Pimenov");   // ← имя издателя
+        res.set("LegalCopyright", "© 2025 Vladislav Pimenov");
+        res.set("FileVersion", env!("CARGO_PKG_VERSION"));
+        res.set("ProductVersion", env!("CARGO_PKG_VERSION"));
+        // Остальной код (manifest и т.д.)
         res.set_manifest(r#"
             <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
                 <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
