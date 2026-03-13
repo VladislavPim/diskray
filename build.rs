@@ -6,7 +6,7 @@ fn main() {
         // Добавляем информацию о версии
         res.set("FileDescription", "DiskRay Disk Space Analyzer");
         res.set("ProductName", "DiskRay");
-        res.set("CompanyName", "Vladislav Pimenov");   // ← имя издателя
+        res.set("CompanyName", "Vladislav Pim");   // ← имя издателя
         res.set("LegalCopyright", "© 2025 Vladislav Pimenov");
         res.set("FileVersion", env!("CARGO_PKG_VERSION"));
         res.set("ProductVersion", env!("CARGO_PKG_VERSION"));
